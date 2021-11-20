@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nova+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*{
+    background-color: #010A26;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+#imagem-inicial{
+    width: 100%;
+    height: auto;
+}
+
+#tela-oculta{
+    display: none;
+}
+
+.tela-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#home h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.4rem;
+    color: #F2DFBB;
+    margin-bottom: 5rem;
+}
+
+#home h1::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+.botao-jogo{
+    font-family: 'Poppins';
+    user-select: none;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #F2DFBB;
+    background: linear-gradient(90deg, #014040, #027367 100%);
+    border-radius: 4px;
+}
+
+.botao-jogo:hover{
+    color: #F2DFBB;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #014040;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.botao-jogo[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/*Definições*/
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+/*Fim das definições*/
+
+/*Animações*/
+@keyframes pisca{
+    0%, 100%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+  }
+  /*Fim das animações*/
+
+  /*Responsividade */
+@media (min-width: 300px) and (max-width: 864px) {
+    .tela-home{
+        width: 100% !important;
+        height: 100vh;
+    }
+}
+  /*Fim da responsividade*/
+
+/*Configuração da página final*/
+.end-form-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+input{
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.4rem 1.4rem 0 #014040;
+}
+
+input::placeholder{
+  color:#F2DFBB;
+}
+
+#username{
+  margin-bottom: 3rem;
+  width: 100%;
+  outline: none;
+}
+
+#end-text{
+  font-size: 2.4rem;
+  color: #F2DFBB;
+  text-align: center;
+}
+
+#saveScoreBtn{
+  border: none;
+}
+
+#finalScore{
+  color: #F2DFBB;
+}
+/*Final da página final*/

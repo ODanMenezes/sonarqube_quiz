@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./CSS/style-pagina-final.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Fim estilos CSS -->
+
+    <!-- Links fontes usadas-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Fim links fontes -->
+
+    <!--Icons Fontawsome-->
+    <script src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous"></script>
+    <!--Fim icons Fontawsome-->
+
+    <title>HeuriQuiz</title>
+</head>
+<body>
+  <div class="container2">
+    <div id="end" class="flex-center flex-column">
+      <h1 id="finalScore">0</h1>
+      <form class="end-form-container">
+        <h2 id="end-text">Digite seu nome para salvar sua pontuação!</h2>
+        <input type="text" name="name" id="username" placeholder="Nome">
+        <button class="botao-jogo" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Salvar</button>
+      </form>
+      <a href="./game.html" class="botao-jogo">Jogar outra vez</a>
+      <a href="./index.html"class="botao-jogo">Voltar para o inicio</a>
+    </div>
+  </div>
+
+  <script src="./JS/end.js"></script>
+</body>
+</html>

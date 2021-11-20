@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nova+Script&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, 
+input{
+  background-color: #010A26 !important;
+  font-family: "Poppins" !important;
+}
+
+p,
+h1{
+  background: none;
+  color: black !important;
+}
+
+#score{
+  font-size: 4.5rem;
+  color: #F2DFBB !important;
+}
+
+#hud-prefix{
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F2DFBB !important;
+}
+
+#hud-item{
+  width: 100%;
+}
+
+.choice-container-2{
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 4px;
+  background: #F2DFBB !important;
+  min-width: 100rem;
+}
+
+.choice-container-2:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #F2DFBB !important;
+  transition: scale(1.02);
+  transform: transform 100ms;
+}
+
+.choice-prefix{
+  padding: 2rem 2.5rem;
+  color: #fff;
+}
+
+.choice-text{
+  padding: 2rem;
+  width: 100%;
+}
+
+.correct{
+  background: #71F433 !important;
+}
+.incorrect{
+  background: #FC3939 !important;
+}
+
+#question{
+  margin: 20px 10px 20px 10px;
+  font-size: 15px;
+  text-align: justify;
+  color: #F2DFBB !important;
+}
+
+/*Progresso*/
+#hud{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix{
+  color: #F2DFBB !important;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text{
+  text-align: center;
+}
+
+#progressBar{
+  width: 75rem;
+  height: 2rem;
+  border: 0.2rem solid rgb(11, 223, 36);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: none;
+}
+
+#progressBarFull{
+  height: 100%;
+  border-radius: 50px;
+  background: rgb(11, 223, 36);
+  width:0%;
+}
+
+@media screen and (max-width: 900px){
+  .choice-container-2{
+    min-width: 40rem;
+  }
+
+  #score{
+    font-size: 4.5rem;
+    color: #F2DFBB !important;
+  }
+  
+  #hud-prefix{
+    font-size: 21px;
+    color: #F2DFBB !important;
+  }
+  
+  #hud-item{
+    width: 100%;
+  }
+  
+  #progressBar{
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11, 223, 36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: none;
+  }
+
+  #progressBarFull{
+    height: 100%;
+    background: rgb(11, 223, 36);
+    width:100%;
+  }
+
+  #hud{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hud-prefix{
+    color: #F2DFBB !important;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .hud-main-text{
+    text-align: center;
+  }
+}
