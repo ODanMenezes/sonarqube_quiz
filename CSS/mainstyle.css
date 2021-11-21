@@ -126,11 +126,11 @@
 
 #home h1{
     font-family: 'Game-Of-Squids';
-    font-size: 4rem;
-    line-height: 80px;
+    font-size: 3rem;
+    line-height: 50px;
     text-align: center;
     color: #fff;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
 }
 
 #home h2{
