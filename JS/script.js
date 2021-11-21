@@ -3,4 +3,4 @@ var carregar = setInterval(function(){
 
     document.getElementById("imagem-inicial").style.display = "none";
     document.getElementById("tela-oculta").style.display = "inline";
-},3500);
+},6500);
