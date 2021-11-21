@@ -11,6 +11,24 @@
     font-style: normal;
 }
 
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:rgb(230, 228, 228);
+}
+
+::-webkit-scrollbar-thumb {
+background-image: linear-gradient(100deg, #0c0c0c, #ff0526);
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: rgb(230, 228, 228); 
+}
+  
+
 .top {
     margin-top: -90%;
     height: 5%;
@@ -22,7 +40,6 @@
 }
 
 .footer {
-    position: fixed;
     bottom:0;
     height:auto;
     width:100%;
@@ -54,53 +71,6 @@
     display: flex;
 }
 
-.icons{ 
-    width: auto;
-    height: auto;
-    padding: 10px;
-    margin-left: 1rem;
-    font-family: 'Poppins';
-    font-size: 0.85rem;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #b047f1;
-    box-shadow: 0 0.4rem 1.4rem 0 #b047f152;
-    border-radius: 30px;
-    align-items: center;
-    justify-content: center;
-}
-
-.icons:hover{
-    color: rgb(255, 162, 235);
-}
-
-.area-corpo{
-    height: 40%;
-    width: 100%;
-    background-image: linear-gradient(90deg, #7D13BF, #291631);
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1%;
-}
-
-.area-botao{
-    height: 135%;
-    width: 100%;
-    background-image: url(../IMAGES/round-soldier.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: absolute;
-    z-index: 9999;
-    bottom: 0;
-    padding: 5vw;
-}
-
 #imagem-inicial{
     width: 100%;
     height: auto;
@@ -124,32 +94,44 @@
     background-image: linear-gradient(90deg, #291631, #7D13BF);
 }
 
+.title-one{
+    background-color: rgb(230, 228, 228);
+    width: 100%;
+    font-family: 'Game-Of-Squids';
+    padding: 1vw;
+}
+
+.title-one h1{
+    font-family: 'Game-Of-Squids';
+    color: #291631;
+}
+
+.title-one h4{
+    font-family: 'Game-Of-Squids';
+    color: #291631;
+}
+
+.title-one h6{
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #ff0526;
+}
 #home h1{
     font-family: 'Game-Of-Squids';
-    font-size: 3rem;
-    line-height: 50px;
+    font-size: xx-large;
+    line-height: medium;
     text-align: center;
-    color: #fff;
-    margin-bottom: 10rem;
+    color: #0c0c0c;
 }
 
 #home h2{
     font-family: 'Poppins';
-    font-size: 1.3rem;
+    font-size: 100%;
     text-align: center;
     color: #fff;
-    margin-bottom: 2px;
 }
 
-#home h1::after{
-    content: '❙';
-    color: #ff0526;
-    margin-left: 5px;
-    opacity: 1;
-    animation: pisca .8s infinite;
-}
-
-#home h8::before{
+#home button::before{
     content: '▹';
     color: #fff;
     font-size: 3rem;
@@ -158,18 +140,18 @@
     animation: pisca .4s infinite;
 }
 
-.botao-jogo{
+.botao-jogar{
     font-family: 'Poppins';
-    font-size: 3rem;
+    font-size: xx-large;
     color: #fff;
     text-align: center;
     height: 10vw;
-    width: 35vw;
+    width: 40vw;
+    margin-left: 10vw;
     vertical-align: middle;
-    padding: 2.5%;
-    margin-top: 15%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    border: none;
+    outline: none;
+    padding: 1.5%;
     border-radius: 10px;
     background: transparent;
     box-shadow: 0 0.4rem 1.4rem 0 #291631;
@@ -177,18 +159,40 @@
     transition: 0.5s;
 }
 
-.botao-jogo:hover{
+.botao-jogar:hover{
     color: #fff;
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 #0c0c0c;
-    transition: transform 150ms;
+    background-image: linear-gradient(90deg, #ffffffb7, #e2e0e463);
+    transition: transform 50ms;
     transform: scale(1.03);
 }
 
-.botao-jogo[disabled]:hover{
+.botao-jogar[disabled]:hover{
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+.botao-git{ 
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-left: 1rem;
+    font-family: 'Poppins';
+    font-size: 0.85rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #b047f1;
+    box-shadow: 0 0.4rem 1.4rem 0 #b047f152;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-git:hover{
+    color: rgb(255, 162, 235);
 }
 
 /*Definições*/
@@ -222,5 +226,3 @@
     }
 }
   /*Fim da responsividade*/
-
-  
