@@ -165,6 +165,8 @@
     text-align: center;
     height: 10vw;
     width: 35vw;
+    vertical-align: middle;
+    padding: 2.5%;
     margin-top: 15%;
     margin-left: 1rem;
     margin-right: 1rem;
