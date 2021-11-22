@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nova+Script&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 *{
-    background-color: #010A26;
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
+}
+
+@font-face {
+  font-family: 'Game-Of-Squids';
+  src: url("./font/Game-Of-Squids.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 #imagem-inicial{
@@ -18,7 +24,7 @@
 
 .tela-home{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,14 +32,29 @@
     padding: 2rem;
 }
 
-#home h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 5.4rem;
-    color: #F2DFBB;
-    margin-bottom: 5rem;
+#home{
+  background-color: #291631 !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
-#home h1::after{
+#home a{
+  text-decoration: none;
+}
+
+#home h1{
+    font-family: 'Game-Of-Squids', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+#home h2{
+  font-family: 'Game-Of-Squids', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+}
+
+#home h2::after{
     content: '|';
     margin-left: 5px;
     opacity: 1;
@@ -45,18 +66,20 @@
     user-select: none;
     font-size: 1.5rem;
     padding: 2rem 0;
-    width: 30rem;
+    width: 90%!important;
     text-align: center;
     margin-bottom: 1rem;
     color: #F2DFBB;
-    background: linear-gradient(90deg, #014040, #027367 100%);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0.4rem 1.4rem 0 #0c0c0c;
     border-radius: 4px;
 }
 
 .botao-jogo:hover{
-    color: #F2DFBB;
+    color: #fff;
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 #014040;
+    background-image: linear-gradient(90deg, #ffffffb7, #e2e0e463);
     transition: transform 150ms;
     transform: scale(1.03);
 }
@@ -67,15 +90,60 @@
     transform: none;
 }
 
+.botao-git{ 
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin-left: 1rem;
+  font-family: 'Poppins';
+  font-size: 0.85rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b047f1;
+  box-shadow: 0 0.4rem 1.4rem 0 #b047f152;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao-git:hover{
+  color: rgb(255, 162, 235);
+}
+
 /*Definições*/
 .flex-column{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
 }
 
 .flex-center{
   justify-content: center;
   align-items: center;
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../IMAGES/round-soldier.png);
+  background-size: 80%, cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  padding: 4%;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #291631, #ff00224b);
+  border-radius: 100px;
+  margin-bottom: 2%;
+  width: auto;
+  height: auto;
 }
 /*Fim das definições*/
 
@@ -90,35 +158,11 @@
   }
   /*Fim das animações*/
 
-  /*Responsividade */
-@media (min-width: 300px) and (max-width: 864px) {
-    .tela-home{
-        width: 100% !important;
-        height: 100vh;
-    }
-}
-  /*Fim da responsividade*/
-
 /*Configuração da página final*/
-.end-form-container{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+#end{
+  width: 100% !important;
   align-items: center;
-  max-width: 30rem;
-}
-
-input{
-  margin-bottom: 1rem;
-  width: 20rem;
-  padding: 1.5rem;
-  font-size: 1.8rem;
-  border: none;
-  box-shadow: 0 0.4rem 1.4rem 0 #014040;
-}
-
-input::placeholder{
-  color:#F2DFBB;
+  justify-content: center;
 }
 
 #username{
@@ -138,6 +182,41 @@ input::placeholder{
 }
 
 #finalScore{
-  color: #F2DFBB;
+  font-family: 'Game-Of-Squids';
+  font-size: 3.5rem;
+  color: #66ff00!important;
+}
+
+.footer {
+  bottom:0;
+  height:auto;
+  width:100%;
+  background-image: linear-gradient(90deg, #291631, #0c0c0c);
+  color: #fff;
+  padding:35px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  border-top: 10px solid #ff0526;
+}
+
+.footer h6{
+  font-family: 'Poppins';
+  color: #b047f1;
+}
+
+.footer hr{
+  background-color: #b047f1;
+}
+
+.footer i{
+  font-family: 'Poppins';
+}
+
+.social-icons{
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  text-decoration: none;
+  display: flex;
 }
 /*Final da página final*/
