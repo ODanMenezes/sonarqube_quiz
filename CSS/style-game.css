@@ -35,6 +35,7 @@ input{
   font-family: "Poppins" !important;
   width: 100%;
   height: auto;
+  padding: 2%;
 }
 
 p,
@@ -54,7 +55,8 @@ h1{
 }
 
 #hud-prefix{
-  font-size: 15px;
+  font-family: 'Game-Of-Squids' !important;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,12 +66,17 @@ h1{
 #hud-item{
   width: 100%;
   margin-top: 1%;
+  align-items: center;
+  justify-content: center;
 }
 
 .choice-container-2{
   display: flex;
+  justify-content: center;
+  padding: 2%;
   margin-bottom: 2rem;
-  width: auto;
+  height: auto;
+  min-width: 100% !important;
   border-radius: 4px;
   background-image: linear-gradient(35deg, #291631, #ff0526);
   box-shadow: 0 0.2rem 1.4rem 0 #ff0526;
@@ -82,20 +89,20 @@ h1{
   background-size: 25%, cover;
   background-repeat: no-repeat;
   background-position: right;
-  width: 90%;
+  height: auto;
+  width: 70%;
   border: 3px solid #66ff00 !important;
 }
 
 .choice-prefix{
   font-family: 'Game-Of-Squids';
   font-size: 2.5rem;
-  padding: 2rem 2.5rem;
 }
 
 .choice-text{
-  padding: 2rem;
-  width: 60%;
-  font-size: 1.5rem;
+  padding: 1rem;
+  width: 60% !important;
+  font-size: 1.2rem;
 }
 
 .correct{
@@ -106,7 +113,7 @@ h1{
   content: '✔';
   color: #fff;
   font-size: 5vw;
-  margin-right: 1vw;
+  margin-right: 0.5vw;
 }
 
 .incorrect{
@@ -117,7 +124,7 @@ h1{
   content: '✕';
   color: #fff;
   font-size: 5vw;
-  margin-right: 1vw;
+  margin-right: 0.5vw;
 }
 
 #question{
@@ -125,6 +132,15 @@ h1{
   font-size: 30px;
   text-align: justify;
   color: #fff !important;
+}
+
+.pontos{
+  background-color: #291631;
+  border-radius: 10px;
+  box-shadow: 0 0.2rem 1.4rem 0 #0c0c0c;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Progresso*/
@@ -136,7 +152,7 @@ h1{
 .hud-prefix{
   color: #fff !important;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .hud-main-text{
@@ -149,15 +165,14 @@ h1{
   border: 0.1rem solid rgb(11, 223, 36);
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border-radius: 10px;
   overflow: none;
-  padding: 0.1rem;
+  padding: 5px;
 }
 
 #progressBarFull{
   height: 100%;
-  border-radius: 5px;
-  background-image: linear-gradient(90deg, rgb(11, 223, 36), #66ff00);
+  background-image: linear-gradient(90deg, rgb(11, 223, 36), #66ff00)!important;
+  border-radius: 50px;
   width:0%;
 }
 
@@ -168,12 +183,12 @@ h1{
 
   #score{
     font-size: 4.5rem;
-    color: #F2DFBB !important;
+    color: #66ff00 !important;
   }
   
   #hud-prefix{
     font-size: 21px;
-    color: #F2DFBB !important;
+    color: #fff !important;
   }
   
   #hud-item{
@@ -191,17 +206,16 @@ h1{
 
   #progressBarFull{
     height: 100%;
-    background: rgb(11, 223, 36);
     width:100%;
   }
 
   #hud{
-    display: flex;
+    display: block;
     justify-content: space-between;
   }
   
   .hud-prefix{
-    color: #F2DFBB !important;
+    color: #fff !important;
     text-align: center;
     font-size: 1rem;
   }
