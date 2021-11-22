@@ -5,21 +5,35 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Game-Of-Squids';
+  src: url("./font/Game-Of-Squids.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, 
 input{
-  background-color: #010A26 !important;
+  background-color: #291631 !important;
   font-family: "Poppins" !important;
+  width: 100%;
+  height: auto;
 }
 
 p,
 h1{
   background: none;
-  color: black !important;
+  color: #fff !important;
+}
+
+#tela-oculta{
+  display: none;
 }
 
 #score{
-  font-size: 4.5rem;
-  color: #F2DFBB !important;
+  font-family: 'Game-Of-Squids';
+  font-size: 3.5rem;
+  color: #66ff00!important;
 }
 
 #hud-prefix{
@@ -27,51 +41,73 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #F2DFBB !important;
+  color: #fff !important;
 }
 
 #hud-item{
   width: 100%;
+  margin-top: 1%;
 }
 
 .choice-container-2{
   display: flex;
-  margin-bottom: 1rem;
-  width: 100%;
+  margin-bottom: 2rem;
+  width: auto;
   border-radius: 4px;
-  background: #F2DFBB !important;
-  min-width: 100rem;
+  background-image: linear-gradient(35deg, #291631, #ff0526);
+  box-shadow: 0 0.2rem 1.4rem 0 #ff0526;
+  align-items: center;
 }
 
 .choice-container-2:hover{
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 #F2DFBB !important;
-  transition: scale(1.02);
-  transform: transform 100ms;
+  background-image: url(../IMAGES/round-soldier.png);
+  background-size: 25%, cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 90%;
+  border: 3px solid #66ff00 !important;
 }
 
 .choice-prefix{
+  font-family: 'Game-Of-Squids';
+  font-size: 2.5rem;
   padding: 2rem 2.5rem;
-  color: #fff;
 }
 
 .choice-text{
   padding: 2rem;
-  width: 100%;
+  width: 60%;
+  font-size: 1.5rem;
 }
 
 .correct{
-  background: #71F433 !important;
+  background: #38b100 !important;
 }
+
+.correct a::after{
+  content: '✔';
+  color: #fff;
+  font-size: 5vw;
+  margin-right: 1vw;
+}
+
 .incorrect{
   background: #FC3939 !important;
 }
 
+.incorrect a::after{
+  content: '✕';
+  color: #fff;
+  font-size: 5vw;
+  margin-right: 1vw;
+}
+
 #question{
   margin: 20px 10px 20px 10px;
-  font-size: 15px;
+  font-size: 30px;
   text-align: justify;
-  color: #F2DFBB !important;
+  color: #fff !important;
 }
 
 /*Progresso*/
@@ -81,7 +117,7 @@ h1{
 }
 
 .hud-prefix{
-  color: #F2DFBB !important;
+  color: #fff !important;
   text-align: center;
   font-size: 2rem;
 }
@@ -91,18 +127,20 @@ h1{
 }
 
 #progressBar{
-  width: 75rem;
+  width: 100%;
   height: 2rem;
-  border: 0.2rem solid rgb(11, 223, 36);
+  border: 0.1rem solid rgb(11, 223, 36);
   margin-top: 2rem;
-  border-radius: 50px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
   overflow: none;
+  padding: 0.1rem;
 }
 
 #progressBarFull{
   height: 100%;
-  border-radius: 50px;
-  background: rgb(11, 223, 36);
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, rgb(11, 223, 36), #66ff00);
   width:0%;
 }
 
