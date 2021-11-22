@@ -8,33 +8,71 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./CSS/style-pagina-final.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Fim estilos CSS -->
 
     <!-- Links fontes usadas-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Fim links fontes -->
 
     <!--Icons Fontawsome-->
     <script src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous"></script>
     <!--Fim icons Fontawsome-->
 
-    <title>HeuriQuiz</title>
+    <title>Fim de Jogo</title>
 </head>
-<body>
+<body id="home">
   <div class="container2">
     <div id="end" class="flex-center flex-column">
-      <h1 id="finalScore">0</h1>
-      <form class="end-form-container">
-        <h2 id="end-text">Digite seu nome para salvar sua pontuação!</h2>
-        <input type="text" name="name" id="username" placeholder="Nome">
-        <button class="botao-jogo" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Salvar</button>
-      </form>
-      <a href="./game.html" class="botao-jogo">Jogar outra vez</a>
-      <a href="./index.html"class="botao-jogo">Voltar para o inicio</a>
+      <div class="flex-row"><h1 id="finalScore"> 0 </h1><h2>pontos</h2></div>
+      <a href="./game.html" class="botao-jogo">
+        <span class="material-icons outlined">
+          sports_esports
+        </span>
+        Jogar outra vez
+      </a>
+      <a href="./index.html"class="botao-jogo">
+        <span class="material-icons outlined">
+          home
+        </span>
+        Voltar ao início
+      </a>
     </div>
   </div>
 
-  <script src="./JS/end.js"></script>
+  <div style="display: none;">
+    <audio controls autoplay loop>
+      <source src="./MUSIC/NARUTO SHIPPUDEN OP1 - Hero's come Back┃Cover by Raon Lee x PelleK (192 kbps).mp3" type="audio/ogg">
+      Seu navegador não suporta tal elemento de aúdio.
+    </audio>
+  </div>
+
+<!-- Footer -->
+<footer class="footer" style="padding:32px; background-image: linear-gradient(90deg, #291631, #0c0c0c);">
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <h6>Sobre o Projeto Teste de Software e a Plataforma SonarQube</h6>
+          <p class="text-justify">A disciplina ministrada,<i> Testes de Sistemas</i>, estuda critérios que os sistemas devem ter para atender a todos os requisitos, conforme as boas práticas, usufruindo dos menores custos e mínimos prejuízos possíveis. A plataforma,<i> SonarQube</i>, por exemplo, atua justamente para melhorar a qualidade dos testes em códigos fontes.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+          <div class="row">
+            <div style="display: flex;align-items: center;">
+                <h6 class="copyright-text">Copyright &copy; 2021 Direitos reservados por Matheus Ramos e Daniel Menezes.</h6>
+              <div class="social-icons">
+                <a class="botao-git" style="text-decoration: none;" href="https://github.com/devMatheusR" target="_blank"><i class="fa fa-github"></i> Matheus Ramos (Criador) </a>
+                <a class="botao-git" style="text-decoration: none;" href="https://github.com/ODanMenezes" target="_blank"><i class="fa fa-github"></i> Daniel Menezes (Discípulo) </a>
+              </div>
+             </div>
+          </div>
+      </div>
+</footer>
+
+<script src="./JS/end.js"></script>
+
 </body>
 </html>
