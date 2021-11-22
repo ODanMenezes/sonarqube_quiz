@@ -13,47 +13,46 @@ let availableQuestion = []
 let questions = [
   {
   question : 'O que é o SonarQube?',
-  choice1 : 'Uma plataforma de jogos',
-  choice2 : 'Uma plataforma de código fechado, para inspeção contínua da qualidade do código',
-  choice3 : 'Não sei',
-  choice4 : 'Uma plataforma de código aberto, para inspeção contínua da qualidade do código',
+  choice1 : 'Uma plataforma que só desenvolve relatórios sobre bugs',
+  choice2 : 'Uma plataforma que desenvolve códigos, usando Inteligências Artficiais',
+  choice3 : 'Uma ferramenta que analisa códigos em desenvolvimento, mas não detecta vulnerabilidades',
+  choice4 : 'Uma ferramenta criada para garantir a qualidade do código fonte em desenvolvimento',
   answer:4,
   },
   {
-  question : 'Na instalação: Onde precisa está referênciado o caminho do JDK?',
-  choice1 : 'C:/SonarQube/conf',
-  choice2 : 'C:/SonarQube/conf/wrapper',
-  choice3 : 'C:/Download/SonarQube',
-  choice4 : 'C:/SonarQube/bin/windows-x86-64',
+  question : 'Uma vez que sua instância esteja em  total funcionamento, como acessar ao SonarQube?',
+  choice1 : 'http://localhost:1234 na URL do navegador',
+  choice2 : 'http://localhost:9000 na URL do navegador',
+  choice3 : 'http://localhost:6000 na URL do navegador',
+  choice4 : 'http://localhost:3000 na URL do navegador',
   answer:2,
   },
   {
-  question : 'Como são divididos os tipos de ISSUES? ',
-  choice1 : 'Bug, vulnerabilidade e code smell',
-  choice2 : 'Diversão, bug, SSD',
-  choice3 : 'INFO, bug, critical',
-  choice4 : 'Nenhumas das outras opções',
-  answer:1,
+  question : 'Sobre a afirmação: "A palavra do inglês, "ISSUES", é utilizada para generalizar problemas, descobertos pelo SonarQube, que são: bugs, vulnerabilidades e software data loss.". Aponte:',
+  choice1 : 'Verdade, pois ambos podem levar a um erro ou comportamento inesperado no tempo de execução',
+  choice2 : 'Falso, pois a palavra não busca designar fatores que levam a erros ou comportamentos inesperados no tempo de execução',
+  choice3 : 'Verdadeiro, já que esses problemas complicam a manutenção dos códigos, deixando difícil de manter INFO, bug, critical',
+  choice4 : 'Falso, pois o termo "software data loss" não se enquadra. O correto é "Code Smell", que é uma parte no código que indica um problema mais profundo',
+  answer:4,
   },
   {
-  question : 'Para funcionar o SonarQube precisa de um JDK superior ou igual ao JDK 11?',
-  choice1 : 'Verdadeiro',
+  question : 'Qual requisito especial para que o SonarQube funcione?',
+  choice1 : 'Que um dos sistemas operacionais, tanto o Windows, Linux como Apple, nas versões mais atuais, esteja instalado na máquina',
+  choice2 : 'Ser um administrador global e, assim, poder autenticar e acessar como administrador todas suas autorizações',
+  choice3 : 'Um JDK superior ou semelhante ao JDK 11',
+  choice4 : 'Consultar a documentação e fornecer feedback da interface SonarQube',
+  answer:3,
+  },
+  {
+  question : 'Sobre a afirmação: "No SonarQube, os resultados e avaliações, referente a qualidade do código, ficam armazenadas em um banco de dados.". Responda:',
+  choice1 : 'Verdade',
   choice2 : 'Falso',
-  choice3 : '',
-  choice4 : '',
-  answer:1,
-  },
-  {
-  question : 'Qual gravidade (severity) denuncia uma baixa probabilidade de impacto no comportamento do código?',
-  choice1 : 'Infor',
-  choice2 : 'Critical',
-  choice3 : 'Bug',
-  choice4 : 'Nenhumas das outras opções',
-  answer:2,
-  },
+  choice3 : 'Verdade, mas apenas com o MySQL instalado',
+  choice4 : 'Nem toda a afirmação é falsa',
+  answer:1,  },
 ]
 
-const SCORE_POINTS = 25
+const SCORE_POINTS = 20
 const MAX_QUESTIONS = 5
 
 startGame = () => {
