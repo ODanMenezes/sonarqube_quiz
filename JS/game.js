@@ -44,7 +44,7 @@ let questions = [
   answer:3,
   },
   {
-  question : 'Sobre a afirmação: "No SonarQube, os resultados e avaliações, referente a qualidade do código, ficam armazenadas em um banco de dados.". Responda:',
+  question : 'Sobre a afirmação: "No SonarQube, os resultados e avaliações, referentes à qualidade do código, ficam armazenadas em um banco de dados.". Responda:',
   choice1 : 'Verdade',
   choice2 : 'Falso',
   choice3 : 'Verdade, mas apenas com o MySQL instalado',
